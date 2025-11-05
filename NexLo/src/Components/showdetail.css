@@ -1,0 +1,60 @@
+.partner-bg {
+  @apply min-h-screen bg-iceBlue text-darkBlue font-sans flex flex-col items-center py-10 px-5;
+}
+.partner-main {
+  @apply max-w-6xl w-full flex flex-col md:flex-row items-center justify-between bg-white rounded-3xl shadow-lg overflow-hidden mb-10;
+}
+.partner-image {
+  @apply md:w-1/2 p-10 flex justify-center;
+}
+.partner-card {
+  @apply md:w-1/2 bg-white p-10 md:p-14;
+}
+.partner-heading {
+  @apply text-3xl font-bold mb-4 text-darkBlue;
+}
+.partner-text {
+  @apply text-blue mb-6;
+}
+.partner-input {
+  @apply w-full px-4 py-3 border border-lightBlue rounded-xl outline-none focus:ring-2 focus:ring-blue focus:border-blue transition-all;
+}
+.partner-btn {
+  @apply w-full bg-blue text-white py-3 rounded-xl font-semibold hover:bg-skyBlue transition-all;
+}
+.partner-agreement {
+  @apply text-xs text-blue mt-4;
+}
+.partner-steps {
+  @apply max-w-6xl w-full mb-10;
+}
+.partner-step-card {
+  @apply bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-all border border-lightBlue text-center;
+}
+.partner-step-number {
+  @apply text-3xl font-bold text-blue mb-3;
+}
+.partner-step-title {
+  @apply text-xl font-semibold mb-2 text-darkBlue;
+}
+.partner-step-desc {
+  @apply text-blue;
+}
+.partner-docs {
+  @apply max-w-5xl w-full bg-white shadow-md rounded-2xl p-8 border border-lightBlue relative;
+}
+.partner-docs-corner {
+  @apply absolute top-0 right-0 w-12 h-12 bg-iceBlue rounded-bl-3xl;
+}
+.partner-docs-title {
+  @apply text-lg font-semibold text-darkBlue mb-2;
+}
+.partner-docs-subtitle {
+  @apply text-blue mb-5;
+}
+.partner-docs-list {
+  @apply list-disc pl-6 space-y-2 text-darkBlue;
+}
+.partner-docs-link {
+  @apply text-blue font-semibold hover:text-skyBlue;
+}
