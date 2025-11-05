@@ -2,6 +2,8 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import LandingPage from './Components/LandingPage.jsx';
 import Footer from './Components/Footer.jsx';
+import SignIn from "./Components/SignIn.jsx";
+import Showdetail from "./Components/Showdetail.jsx";
 
 // Placeholder pages — as we create these pages later
 function SignIn() {
@@ -19,6 +21,7 @@ function App() {
         <Route path="/" element={<LandingPage />} />
         <Route path="/signin" element={<SignIn />} />
         <Route path="/partner" element={<Partner />} />
+        <Route path="/showdetail" element={<Showdetail />} />
       </Routes>
 
       <Footer />

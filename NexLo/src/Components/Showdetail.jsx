@@ -1,13 +1,12 @@
 import React from "react";
-import "./showdetail.css"; 
 
-function PartnerPage() {
+function Showdetail() {
   return (
-    <div className="partner-bg">
+    <div className="min-h-screen bg-iceBlue text-darkBlue font-sans flex flex-col items-center py-10 px-5">
       {/* Header Section */}
-      <div className="partner-main">
+      <div className="max-w-6xl w-full flex flex-col md:flex-row items-center justify-between bg-white rounded-3xl shadow-lg overflow-hidden mb-10">
         {/* Left Side - Illustration */}
-        <div className="partner-image">
+        <div className="md:w-1/2 p-10 flex justify-center">
           <img
             src="https://cdn.dribbble.com/users/1787323/screenshots/16260991/media/3abf4bb11d7a1399b372a8a67932c175.png"
             alt="Local Business Partner Illustration"
@@ -16,22 +15,27 @@ function PartnerPage() {
         </div>
 
         {/* Right Side - Get Started */}
-        <div className="partner-card">
-          <h2 className="partner-heading">Get Started</h2>
-          <p className="partner-text">Get your business online-ready to continue</p>
+        <div className="md:w-1/2 bg-white p-10 md:p-14">
+          <h2 className="text-3xl font-bold mb-4 text-darkBlue">Get Started</h2>
+          <p className="text-blue mb-6">
+            Get your business online-ready to continue
+          </p>
 
           <form className="space-y-4">
             <input
               type="text"
               placeholder="Enter Business ID / Mobile number"
-              className="partner-input"
+              className="w-full px-4 py-3 border border-lightBlue rounded-xl outline-none focus:ring-2 focus:ring-blue focus:border-blue transition-all"
             />
-            <button type="submit" className="partner-btn">
+            <button
+              type="submit"
+              className="w-full bg-blue text-white py-3 rounded-xl font-semibold hover:bg-skyBlue transition-all"
+            >
               Continue
             </button>
           </form>
 
-          <p className="partner-agreement">
+          <p className="text-xs text-blue mt-4">
             By logging in, I agree to NexLo’s{" "}
             <a href="#" className="underline hover:text-skyBlue">
               terms & conditions
@@ -41,7 +45,7 @@ function PartnerPage() {
       </div>
 
       {/* Steps Section */}
-      <div className="partner-steps">
+      <div className="max-w-6xl w-full mb-10">
         <h3 className="text-2xl font-bold text-center mb-6">
           Get your business delivery-ready in{" "}
           <span className="text-blue">24 hrs!</span>
@@ -67,18 +71,16 @@ function PartnerPage() {
       </div>
 
       {/* Documents Handy Section */}
-      <div className="partner-docs">
-        <div className="partner-docs-corner"></div>
-        <h4 className="partner-docs-title">
+      <div className="max-w-5xl w-full bg-white shadow-md rounded-2xl p-8 border border-lightBlue relative">
+        <div className="absolute top-0 right-0 w-12 h-12 bg-iceBlue rounded-bl-3xl"></div>
+        <h4 className="text-lg font-semibold text-darkBlue mb-2">
           For an easy form filling process,
         </h4>
-        <p className="partner-docs-subtitle">
-          You can keep these documents handy:
-        </p>
-        <ul className="partner-docs-list">
+        <p className="text-blue mb-5">You can keep these documents handy:</p>
+        <ul className="list-disc pl-6 space-y-2 text-darkBlue">
           <li>
             FSSAI License copy{" "}
-            <a href="#" className="partner-docs-link">
+            <a href="#" className="text-blue font-semibold hover:text-skyBlue">
               Apply Here
             </a>
           </li>
@@ -86,7 +88,7 @@ function PartnerPage() {
           <li>Bank details</li>
           <li>
             GSTIN{" "}
-            <a href="#" className="partner-docs-link">
+            <a href="#" className="text-blue font-semibold hover:text-skyBlue">
               Apply Here
             </a>
           </li>
@@ -96,14 +98,16 @@ function PartnerPage() {
     </div>
   );
 }
+
+/* Step Card Component */
 function StepCard({ number, title, desc }) {
   return (
-    <div className="partner-step-card">
-      <div className="partner-step-number">Step {number}</div>
-      <h4 className="partner-step-title">{title}</h4>
-      <p className="partner-step-desc">{desc}</p>
+    <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-all border border-lightBlue text-center">
+      <div className="text-3xl font-bold text-blue mb-3">Step {number}</div>
+      <h4 className="text-xl font-semibold mb-2 text-darkBlue">{title}</h4>
+      <p className="text-blue">{desc}</p>
     </div>
   );
 }
 
-export default PartnerPage;
+export default Showdetail;

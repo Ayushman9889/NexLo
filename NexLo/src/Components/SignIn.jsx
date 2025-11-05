@@ -1,10 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./SignIn.css"; 
 
 function SignIn() {
   return (
-    <div className="signin-bg flex flex-col md:flex-row text-darkBlue font-sans">
+    <div className="min-h-screen flex flex-col md:flex-row bg-iceBlue text-darkBlue font-sans">
       {/* Left Side - Illustration */}
       <div className="md:w-1/2 flex items-center justify-center bg-white">
         <img
@@ -15,9 +14,9 @@ function SignIn() {
       </div>
 
       {/* Right Side - Login Form */}
-      <div className="md:w-1/2 signin-card">
+      <div className="md:w-1/2 flex items-center justify-center p-8 md:p-16 bg-white md:rounded-l-[3rem] shadow-xl">
         <div className="w-full max-w-md">
-          <h1 className="signin-heading">
+          <h1 className="text-4xl font-bold text-center mb-6 text-darkBlue">
             Welcome Back to <span className="text-blue">NexLo</span>
           </h1>
           <p className="text-center text-blue mb-8">
@@ -36,7 +35,7 @@ function SignIn() {
                 type="email"
                 id="email"
                 placeholder="Enter your email"
-                className="signin-input"
+                className="w-full px-4 py-3 border border-lightBlue rounded-xl outline-none focus:ring-2 focus:ring-blue focus:border-blue transition-all"
                 required
               />
             </div>
@@ -52,7 +51,7 @@ function SignIn() {
                 type="password"
                 id="password"
                 placeholder="Enter your password"
-                className="signin-input"
+                className="w-full px-4 py-3 border border-lightBlue rounded-xl outline-none focus:ring-2 focus:ring-blue focus:border-blue transition-all"
                 required
               />
             </div>
@@ -63,13 +62,16 @@ function SignIn() {
               </Link>
             </div>
 
-            <button type="submit" className="signin-btn">
+            <button
+              type="submit"
+              className="w-full bg-blue text-white py-3 rounded-xl font-semibold hover:bg-skyBlue transition-all"
+            >
               Sign In
             </button>
 
             <p className="text-center text-sm text-darkBlue mt-4">
               Don’t have an account?{" "}
-              <Link to="/signup" className="signin-link">
+              <Link to="/signup" className="text-blue hover:text-skyBlue font-semibold">
                 Register
               </Link>
             </p>
