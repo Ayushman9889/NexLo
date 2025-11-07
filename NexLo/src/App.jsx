@@ -4,11 +4,7 @@ import LandingPage from './Components/LandingPage.jsx';
 import Footer from './Components/Footer.jsx';
 import SignIn from "./Components/SignIn.jsx";
 import Showdetail from "./Components/Showdetail.jsx";
-
-
-function Partner() {
-  return <div className="text-center py-20 text-darkBlue text-2xl">Partner With Us Page</div>;
-}
+import PartnerRegistration from './Components/PartnerRegistration.jsx';
 
 function App() {
   return (
@@ -17,6 +13,7 @@ function App() {
         <Route path="/" element={<LandingPage />} />
         <Route path="/signin" element={<SignIn />} />
         <Route path="/partner" element={<Showdetail />} />
+        <Route path="/partnerregistration" element={<PartnerRegistration />} />
       </Routes>
 
       <Footer />
