@@ -1,5 +1,6 @@
 import React from "react";
 import showdetail from "../assets/showdetail.png";
+import { Link } from "react-router-dom";
 
 function Showdetail() {
   return (
@@ -39,12 +40,19 @@ function Showdetail() {
               placeholder="Enter Business ID / Mobile number"
               className="w-full px-4 py-3 border border-lightBlue rounded-xl outline-none focus:ring-2 focus:ring-blue focus:border-blue transition-all"
             />
+
+            {/* Adding Link here to navigate to the partner registration page */}
+            {/* We will add logic later to switch page */}
+            
+            <Link to="/partnerregistration">
             <button
               type="submit"
               className="w-full bg-blue text-white py-3 rounded-xl font-semibold hover:bg-skyBlue transition-all"
             >
               Continue
             </button>
+            </Link>
+
           </form>
 
           <p className="text-xs text-blue mt-4">
