@@ -5,10 +5,7 @@ import Footer from './Components/Footer.jsx';
 import SignIn from "./Components/SignIn.jsx";
 import Showdetail from "./Components/Showdetail.jsx";
 
-// Placeholder pages — as we create these pages later
-function SignIn() {
-  return <div className="text-center py-20 text-darkBlue text-2xl">Sign In Page</div>;
-}
+
 function Partner() {
   return <div className="text-center py-20 text-darkBlue text-2xl">Partner With Us Page</div>;
 }
@@ -16,12 +13,10 @@ function Partner() {
 function App() {
   return (
     <BrowserRouter>
-
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/signin" element={<SignIn />} />
-        <Route path="/partner" element={<Partner />} />
-        <Route path="/showdetail" element={<Showdetail />} />
+        <Route path="/partner" element={<Showdetail />} />
       </Routes>
 
       <Footer />

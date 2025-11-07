@@ -1,16 +1,28 @@
 import React from "react";
+import showdetail from "../assets/showdetail.png";
 
 function Showdetail() {
   return (
-    <div className="min-h-screen bg-iceBlue text-darkBlue font-sans flex flex-col items-center py-10 px-5">
+    <div className="min-h-screen bg-iceBlue text-darkBlue font-sans flex flex-col items-center py-8 px-5">
       {/* Header Section */}
+      <div className="w-full flex justify-between items-center max-w-6xl mb-6">
+        <h1 className="text-3xl font-extrabold">
+          <span className="text-[#0B2545]">Nex</span>
+          <span className="text-[#0077B6]">Lo</span>
+        </h1>
+        <h2 className="text-lg font-bold text-[#0A3D62] pr-8">
+          Partner with us
+        </h2>
+      </div>
+
+      {/* Main Content */}
       <div className="max-w-6xl w-full flex flex-col md:flex-row items-center justify-between bg-white rounded-3xl shadow-lg overflow-hidden mb-10">
         {/* Left Side - Illustration */}
-        <div className="md:w-1/2 p-10 flex justify-center">
+        <div className="md:w-1/2 p-10 flex justify-center bg-[#EAF6FB]">
           <img
-            src="https://cdn.dribbble.com/users/1787323/screenshots/16260991/media/3abf4bb11d7a1399b372a8a67932c175.png"
+            src={showdetail}
             alt="Local Business Partner Illustration"
-            className="w-4/5 h-auto object-contain"
+            className="w-5/6 h-auto object-contain rounded-2xl shadow-md hover:scale-105 transition-transform duration-300"
           />
         </div>
 
@@ -76,7 +88,9 @@ function Showdetail() {
         <h4 className="text-lg font-semibold text-darkBlue mb-2">
           For an easy form filling process,
         </h4>
-        <p className="text-blue mb-5">You can keep these documents handy:</p>
+        <p className="text-blue mb-5">
+          You can keep these documents handy:
+        </p>
         <ul className="list-disc pl-6 space-y-2 text-darkBlue">
           <li>
             FSSAI License copy{" "}
